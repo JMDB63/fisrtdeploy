@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+       <title>Base template page</title>
+   </head>
+   <body>
+        {% if countries %}
+       <ul id="list">
+           {% for item in countries %}
+               <li>Ville: {{ item.city  }} || Pays: {{ item.country }}</li>
+       </ul>
+       {% endfor %}
+       {% else %}
+           Il n'y a rien à afficher
+       {% endif %}
+       </ul>
+
+
+
+   </body>
+</html>
