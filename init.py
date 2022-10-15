@@ -7,5 +7,5 @@ def home():
                            title="Exemple de templates avec Jinja",
                            description="Mon application avec Flask et Jinja.")
 
-#if __name__ == "__main__":
- #   app.run()
+if __name__ == "__main__":
+    app.run()
