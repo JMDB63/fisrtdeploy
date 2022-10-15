@@ -13,5 +13,5 @@ countries_list = [
 def homepage():
    return render_template('list_for.html', countries=countries_list)
 
-if __name__ == "__main__":
-   skills_app.run(debug = True)
+#if __name__ == "__main__":
+ #  skills_app.run(debug = True)
